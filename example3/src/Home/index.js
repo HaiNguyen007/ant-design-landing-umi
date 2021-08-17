@@ -41,6 +41,9 @@ export default class Home extends React.Component {
           <h1>Contact Form</h1>
           <Contact />
         </div>
+		<div>
+		<img src="https://seongon.com/wp-content/uploads/2020/11/img2.png"></img>
+		</div>
       </div>
     </>
   );
