@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./styles.css";
 
 export default function Feedback() {
   const [formData, setFormData] = useState({});

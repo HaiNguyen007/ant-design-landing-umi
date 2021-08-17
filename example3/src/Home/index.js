@@ -4,7 +4,6 @@ import { enquireScreen } from 'enquire-js';
 import Feedback from "./Feedback";
 import Contact from "./Contact";
 import Newsletter from "./Newsletter";
-import "./styles.css";
 
 export default class Home extends React.Component {
   constructor(props) {
