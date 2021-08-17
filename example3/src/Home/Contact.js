@@ -47,7 +47,7 @@ export default function Contact() {
         <input
           name="name"
           type="text"
-          placeholder="Name"
+          placeholder="Tên"
           required
           onChange={handleInput}
         />
@@ -58,8 +58,8 @@ export default function Contact() {
           required
           onChange={handleInput}
         />
-        <textarea name="message" placeholder="Message" onChange={handleInput} />
-        <input name="submit" type="submit" value="Send" />
+        <textarea name="message" placeholder="Ghi chú" onChange={handleInput} />
+        <input name="submit" type="submit" value="Đăng Ký" />
         <div>{message}</div>
       </form>
     </div>

@@ -1,17 +1,17 @@
 import React from "react";
 import { enquireScreen } from 'enquire-js';
 
-import Feedback from "./Feedback";
 import Contact from "./Contact";
-import Newsletter from "./Newsletter";
+
+import './style.less';
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isMobile,
-      show: !location.port, // 如果不是 dva 2.0 请删除
-    };
+   // this.state = {
+   //   isMobile,
+   //   show: !location.port, // 如果不是 dva 2.0 请删除
+   // };
   }
 
   componentDidMount() {
@@ -35,25 +35,11 @@ export default class Home extends React.Component {
     return (
     <>
       <h1 style={{ textAlign: "center" }}>
-        <a
-          href="https://docs.google.com/spreadsheets/d/1Z5dAPskMy0iC7Tm95c00tC5p366JqiNht9NmWz-hDqQ/"
-          target="_blank"
-        >
-          Sheets View
-        </a>
       </h1>
       <div className="App">
-        <div className="contact-form form">
-          <h1>Feedback Form</h1>
-          <Feedback />
-        </div>
         <div className="feedback-form form">
           <h1>Contact Form</h1>
           <Contact />
-        </div>
-        <div className="newsletter-form form">
-          <h1>Newsletter</h1>
-          <Newsletter />
         </div>
       </div>
     </>
